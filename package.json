@@ -1,0 +1,24 @@
+{
+  "name": "vanilla-typescript",
+  "version": "1.0.0",
+  "description": "JavaScript and TypeScript example starter project",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "ixfx": "latest"
+  },
+  "devDependencies": {
+    "parcel": "2.12.0",
+    "typescript": "latest"
+  },
+  "resolutions": {
+    "@babel/preset-env": "7.13.8"
+  },
+  "keywords": [
+    "typescript",
+    "javascript"
+  ],
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}
