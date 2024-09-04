@@ -1,4 +1,4 @@
-import * as Flow from "ixfx/dist/flow";
+import * as Flow from "ixfx/flow.js";
 import { State } from "./types";
 
 const settings = Object.freeze({});

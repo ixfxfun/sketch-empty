@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "JavaScript and TypeScript example starter project",
   "scripts": {
-    "start": "parcel index.html",
+    "start": "parcel index.html --port=6600",
     "build": "parcel build index.html"
   },
   "dependencies": {
