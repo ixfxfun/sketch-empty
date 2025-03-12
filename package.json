@@ -10,7 +10,7 @@
     "ixfx": "latest"
   },
   "devDependencies": {
-    "parcel": "2.12.0",
+    "parcel": "2.13.3",
     "typescript": "latest"
   },
   "resolutions": {
