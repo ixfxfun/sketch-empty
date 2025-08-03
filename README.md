@@ -2,6 +2,15 @@
 
 This is an empty Typescript-based ixfx sketch.
 
+
+## Running on Codespaces?
+
+After the initialisation is complete, go to the Codespace terminal, and type:
+
+```
+npm start
+```
+
 ## Creating a new sketch
 
 Assuming you have Node.js installed:
