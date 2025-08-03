@@ -13,7 +13,7 @@
       "ES2023.Array",
       "esnext"
     ],
-    "rootDir": "src",
+    "rootDir": "sketches",
     "moduleResolution": "bundler",
     "paths": {
       "ixfx/*": [
@@ -22,7 +22,7 @@
     }
   },
   "include": [
-    "./src/**.*"
+    "./sketches/**.*"
   ],
   "browserslist": "defaults"
 }

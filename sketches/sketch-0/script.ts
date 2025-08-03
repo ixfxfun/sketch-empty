@@ -11,19 +11,24 @@ let state: State = {
 };
 
 function update() {
-  // TODO: Compute new state and then call saveState
+  // TODO: Compute new state
+  saveState({
+    randomValue: bipolar(),
+  });
 }
 
 function use() {
+  const { randomValue } = state;
+
   // TODO: Use contents of 'state'
+  const el = document.querySelector(`#output`);
+  if (!el) return;
+  el.textContent = randomValue.toPrecision(2);
 }
 
 function setup() {
   const { loopSpeed } = settings;
 
-  saveState({
-    randomValue: bipolar(),
-  });
   Flow.continuously(() => {
     update();
     use();
@@ -37,8 +42,10 @@ setup();
  * Save state
  */
 function saveState(s: Partial<State>) {
-  state = Object.freeze({
+  const newState = Object.freeze({
     ...state,
     ...s,
   });
+  state = newState;
+  return state;
 }

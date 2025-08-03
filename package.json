@@ -3,11 +3,18 @@
   "version": "1.0.0",
   "description": "JavaScript and TypeScript example starter project",
   "scripts": {
-    "start": "parcel index.html --port=6600",
-    "build": "parcel build index.html"
+    "start": "parcel ./sketches/index.html --port=8080 --host=0.0.0.0",
+    "build": "parcel build ./sketches/index.html",
+    "rebuild": "rimraf dist && npm run build",
+    "ws":"node express-ws-server.js"
   },
   "dependencies": {
-    "ixfx": "latest"
+    "@clinth/remote": "^2.1.2",
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "express-ws": "^5.0.2",
+    "ixfx": "latest",
+    "ws": "^8.18.3"
   },
   "devDependencies": {
     "@html-eslint/eslint-plugin": "0.44.0",
@@ -15,6 +22,7 @@
     "@stylistic/eslint-plugin": "5.2.2",
     "eslint": "9.32.0",
     "parcel": "2.15.4",
+    "rimraf": "latest",
     "typescript": "latest",
     "typescript-eslint": "8.38.0"
   },
@@ -26,5 +34,5 @@
     "typescript",
     "javascript"
   ],
-  "browserslist": "> 0.5%, last 2 versions, not dead"
+  "browserslist": "last 2 Chrome versions"
 }
