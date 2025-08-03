@@ -2,8 +2,9 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"type": "npm",
-			"script": "build",
+			"type": "shell",
+			"command": "npm",
+			"args": ["run" ,"build"],
 			"group": {
 				"kind": "build",
 				"isDefault": true
@@ -13,11 +14,21 @@
 			"detail": "parcel build ./sketches/index.html"
 		},
 		{
-			"type": "npm",
-			"script": "ws",
+			"type": "shell",
+			"command": "npm",
+			"args": ["run", "ws"],
 			"problemMatcher": [],
 			"label": "Websockets",
-			"detail": "Start websocket server"
+			"detail": "Start websocket server",
+			"isBackground": true,
+			"presentation": {
+				"echo": true,
+				"reveal": "silent",
+				"focus": false,
+				"panel": "dedicated",
+				"showReuseMessage": true,
+				"clear": false
+			}
 		}
 	]
 }
