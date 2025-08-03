@@ -5,7 +5,13 @@ This is an empty Typescript-based ixfx sketch.
 
 # Running on Codespaces?
 
-When opening this repo as a Codespace, everything should run after a few moments.
+When opening this repo as a Codespace, it will take a few minutes the first time. When everything has settled, open a terminal in the Codespace and run:
+
+```js
+npm start
+```
+
+Make your sketches under the 'sketches' directory. Copy 'sketch-0' as a starter. Ensure you add a link to your sketch in `sketches/index.html`.
 
 ## Websockets
 
@@ -15,7 +21,7 @@ To use websockets, open a terminal in the Codespace and run:
 npm run ws
 ```
 
-This will open another port (8081), make sure you set that to 'Public' under the Ports section at the bottom.
+This will open another port (8081). Go to the 'Ports' tab in the bottom panel of Codespaces, and make sure both have 'Visibility' set to 'Public'.
 
 Test it's working using the provided 'ws-demo' sketch.
 

@@ -41,10 +41,10 @@
 			"protocol": "http"
 		}
 	},
+"appPort": [8080,8081],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "npm install",
-	"postStartCommand": "npm start"
+	"postCreateCommand": "npm install"
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
