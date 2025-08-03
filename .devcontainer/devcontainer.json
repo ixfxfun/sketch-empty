@@ -19,7 +19,12 @@
 		"vscode": {
 			"settings": {},
 			"extensions": [
-				"dbaeumer.vscode-eslint"
+				"dbaeumer.vscode-eslint",
+				"ms-vscode.live-server",
+				"aaron-bond.better-comments",
+				"ms-vsliveshare.vsliveshare",
+				"christian-kohler.npm-intellisense",
+				"motform.ixfx-highlight"
 			]
 		}
 	},

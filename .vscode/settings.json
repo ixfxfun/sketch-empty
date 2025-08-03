@@ -101,4 +101,6 @@
   "terminal.integrated.fontLigatures.enabled": true,
   "editor.insertSpaces": true,
   "editor.tabSize": 2,
+  "workbench.editor.limit.enabled":true,
+  "workbench.editor.limit.value":5
 }
