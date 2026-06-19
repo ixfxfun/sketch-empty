@@ -5,7 +5,7 @@ import { defineConfig } from 'vite';
 import ws from 'vite-plugin-ws';
 
 type SocketWithId = WebSocket & { id?: string };
-const DEBUG = true;
+const DEBUG = false;
 
 const sockets = new Set<WebSocket>();
 

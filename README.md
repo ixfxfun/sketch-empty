@@ -1,12 +1,16 @@
 # sketch-empty
 
-This is an empty Typescript-based ixfx sketch.
+This is an (almost) empty Typescript-based ixfx sketch.
 
-[Open as a Codespace](https://github.com/codespaces/new?template_repository=ixfxfun/sketch-empty)
+The initial sketch is found under `sketches`.
+* `index.html`: HTML page
+* `script.ts`: Main behaviour
+* `state.ts`: State type, initialisation and updating
+* `style.css`: Styling for HTML
+
+[Edit your browser](https://github.com/codespaces/new?template_repository=ixfxfun/sketch-empty)
 
 Place and edit your sketches in the `sketches` folder. Compiled code is automatically placed in `public`, so don't edit anything in there directly as it will get overwritten.
-
-The initial sketch is simply `index.html` and `script.ts`
 
 
 # Running on you local computer?
