@@ -1,6 +1,6 @@
+import type { State } from "./types.js";
 import * as Flow from "ixfx/flow.js";
 import { bipolar } from "ixfx/random.js";
-import { State } from "./types.js";
 
 const settings = Object.freeze({
   loopSpeed: 0,
@@ -22,7 +22,8 @@ function use() {
 
   // TODO: Use contents of 'state'
   const el = document.querySelector(`#output`);
-  if (!el) return;
+  if (!el)
+    return;
   el.textContent = randomValue.toPrecision(2);
 }
 

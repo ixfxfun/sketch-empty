@@ -1,14 +1,16 @@
-import { Remote } from "@clinth/remote/dist/index.mjs";
+import { Remote } from "@clinth/remote";
+
+const websocket = `${window.location.protocol === `https:` ? `wss` : `ws`}://${window.location.host}/ws`;
 
 const settings = Object.freeze({
   remote: new Remote({
     allowNetwork: true,
-    websocket: `wss://${window.location.host.replace(`8080`, `8081`)}/ws`,
+    websocket,
   }),
 });
 
 // Called when there is a pointermove event
-const onPointerMove = (event) => {
+function onPointerMove(event: PointerEvent) {
   event.preventDefault();
 
   const { remote } = settings;
@@ -22,9 +24,9 @@ const onPointerMove = (event) => {
     pressure: event.pressure,
   };
   remote.broadcast(d);
-};
+}
 
-const setup = () => {
+function setup() {
   // Listen for pointermove events
   document.addEventListener(`pointermove`, onPointerMove);
 
@@ -32,5 +34,5 @@ const setup = () => {
   document.addEventListener(`wheel`, (event) => {
     event.preventDefault();
   }, { passive: false });
-};
+}
 setup();

@@ -91,7 +91,6 @@
   ],
   "chat.agent.enabled": false,
   "chat.commandCenter.enabled": false,
-  "chat.mcp.enabled": false,
   "chat.extensionTools.enabled": false,
   "chat.sendElementsToChat.enabled": false,
   "livePreview.showServerStatusNotifications": false,
@@ -102,5 +101,6 @@
   "editor.insertSpaces": true,
   "editor.tabSize": 2,
   "workbench.editor.limit.enabled":true,
-  "workbench.editor.limit.value":5
+  "workbench.editor.limit.value": 5,
+  "chat.mcp.access": "none"
 }

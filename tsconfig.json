@@ -1,28 +1,23 @@
 {
   "compilerOptions": {
-    "strict": true,
+    "target": "es2025",
+    "lib": ["ES2025", "DOM"],
+    "moduleDetection": "force",
     "module": "esnext",
-    "target": "ES2023",
-    "jsx": "preserve",
-    "esModuleInterop": true,
-    "sourceMap": true,
-    "allowJs": true,
-    "lib": [
-      "dom",
-      "DOM.Iterable",
-      "ES2023.Array",
-      "esnext"
-    ],
-    "rootDir": "sketches",
+
+    /* Bundler mode */
     "moduleResolution": "bundler",
-    "paths": {
-      "ixfx/*": [
-        "./node_modules/ixfx/bundle/*"
-      ]
-    }
+    "types": ["vite/client"],
+    "allowImportingTsExtensions": true,
+
+    "noFallthroughCasesInSwitch": true,
+    /* Linting */
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noEmit": true,
+    "verbatimModuleSyntax": true,
+    "erasableSyntaxOnly": true,
+    "skipLibCheck": true
   },
-  "include": [
-    "./sketches/**.*"
-  ],
-  "browserslist": "defaults"
+  "include": ["sketches"]
 }

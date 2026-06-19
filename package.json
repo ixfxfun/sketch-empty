@@ -1,39 +1,32 @@
 {
-  "name": "vanilla-typescript",
-  "version": "1.0.0",
-  "description": "JavaScript and TypeScript example starter project",
+  "name": "sketch-empty2",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "start": "parcel ./sketches/index.html --port=8080 --host=0.0.0.0",
-    "build": "parcel build ./sketches/index.html",
-    "rebuild": "rimraf dist && npm run build",
-    "ws": "node express-ws-server.js"
+    "dev": "vite ./sketches --config vite.config.ts",
+    "start": "vite ./sketches --config vite.config.ts",
+    "build": "tsc && vite build ./sketches --config vite.config.ts",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@clinth/remote": "^2.1.2",
+    "ixfx": "latest"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^9.0.0",
+    "@clinth/remote": "latest",
+    "@types/ws": "8.18.1",
     "body-parser": "^2.2.0",
+    "eslint": "^10.3.0",
+    "eslint-plugin-format": "2.0.1",
     "express": "^5.1.0",
     "express-ws": "^5.0.2",
     "globals": "16.3.0",
-    "ixfx": "latest",
-    "ws": "^8.18.3"
-  },
-  "devDependencies": {
-    "@html-eslint/eslint-plugin": "0.44.0",
-    "@html-eslint/parser": "0.44.0",
-    "@stylistic/eslint-plugin": "5.2.2",
-    "eslint": "9.32.0",
-    "parcel": "2.15.4",
-    "rimraf": "latest",
-    "typescript": "latest",
-    "typescript-eslint": "8.38.0"
-  },
-  "resolutions": {
-    "@babel/preset-env": "7.13.8"
-  },
-  "type": "module",
-  "keywords": [
-    "typescript",
-    "javascript"
-  ],
-  "browserslist": "last 2 Chrome versions"
+    "typescript": "~6.0.2",
+    "vite": "^8.0.12",
+    "vite-plugin-ws": "0.1.0",
+    "ws": "8.21.0"
+  }
 }
