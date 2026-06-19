@@ -55,7 +55,7 @@ npm start
 
 # Websockets
 
-The provide `ws-*` demos show how to use the in-built websocket server. This works when you're running the server on your machine.
+The provide `ws/ws-*` demos show how to use the in-built websocket server. This works when you're running the server on your machine. Copy the contents of the `ws` folder to `sketches` to try it out.
 
 With the server running, open `http://localhost:5123/ws-index.html`.
 

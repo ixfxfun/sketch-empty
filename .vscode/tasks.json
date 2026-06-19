@@ -16,10 +16,10 @@
 		{
 			"type": "shell",
 			"command": "npm",
-			"args": ["run", "ws"],
+			"args": ["start"],
 			"problemMatcher": [],
-			"label": "Websockets",
-			"detail": "Start websocket server",
+			"label": "Run",
+			"detail": "Start dev server",
 			"isBackground": true,
 			"presentation": {
 				"echo": true,
