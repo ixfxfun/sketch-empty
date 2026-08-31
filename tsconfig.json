@@ -3,8 +3,16 @@
     "target": "es2025",
     "lib": ["ES2025", "DOM"],
     "moduleDetection": "force",
+    "rootDirs": [
+      "src"
+    ],
     "module": "esnext",
     "moduleResolution": "bundler",
+    "paths": {
+      "@ixfx/*": [
+        "./node_modules/ixfx/dist/*"
+      ]
+    },
     "types": ["vite/client"],
     "allowImportingTsExtensions": true,
     "noFallthroughCasesInSwitch": true,

@@ -40,6 +40,14 @@ function broadcast(message: object) {
 }
 
 export default defineConfig({
+  resolve: {
+    alias: [
+      {
+        find: /^@ixfx\/(.*)$/,
+        replacement: path.resolve(__dirname, `node_modules/ixfx/dist/$1`),
+      },
+    ],
+  },
   build: {
     emptyOutDir: true,
     outDir: `../public`,

@@ -1,6 +1,6 @@
 import type { State } from './state.js';
-import * as Flow from "ixfx/flow.js";
-import { bipolar } from "ixfx/random.js";
+import * as Flow from "@ixfx/flow.js";
+import { bipolar } from "@ixfx/random.js";
 import { saveState } from './state.js';
 
 const settings = Object.freeze({

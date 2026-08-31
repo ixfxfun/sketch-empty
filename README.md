@@ -18,18 +18,21 @@ Place and edit your sketches in the `sketches` folder. Compiled code is automati
 Need to install Node.js? [Here's a guide](https://ixfx.fun/reference/installing-node/).
 
 First install the dependencies:
-```js
+
+```
 npm install
 ```
 
 And later on, use the following to start the Vite server
-```js
+
+```
 npm start
 ```
 
-You can also build the sketch to static files, for example to deploy to GitHub pages:
-```js
-npm build
+You can also build the sketch to static files, for example to deploy to GitHub pages. This builds the sketch to the `public/` folder.
+
+```
+npm run build
 ```
 
 ## Creating a new sketch
@@ -45,7 +48,8 @@ npm install
 ```
 
 And then boot up the Vite server:
-```js
+
+```
 npm start
 ```
 
@@ -53,7 +57,7 @@ npm start
 
 When opening this repo as a Codespace, it will take a few minutes the first time. When everything has settled, open a terminal in the Codespace and run:
 
-```js
+```
 npm start
 ```
 
