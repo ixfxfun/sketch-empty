@@ -1,34 +1,22 @@
 {
-	"version": "2.0.0",
-	"tasks": [
-		{
-			"type": "shell",
-			"command": "npm",
-			"args": ["run" ,"build"],
-			"group": {
-				"kind": "build",
-				"isDefault": true
-			},
-			"problemMatcher": [],
-			"label": "npm: build",
-			"detail": "parcel build ./sketches/index.html"
-		},
-		{
-			"type": "shell",
-			"command": "npm",
-			"args": ["start"],
-			"problemMatcher": [],
-			"label": "Run",
-			"detail": "Start dev server",
-			"isBackground": true,
-			"presentation": {
-				"echo": true,
-				"reveal": "silent",
-				"focus": false,
-				"panel": "dedicated",
-				"showReuseMessage": true,
-				"clear": false
-			}
-		}
-	]
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "command": "npm",
+      "args": ["start"],
+      "problemMatcher": [],
+      "label": "Run",
+      "detail": "Start dev server",
+      "isBackground": true,
+      "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "dedicated",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    }
+  ]
 }
