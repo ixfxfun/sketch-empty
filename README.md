@@ -55,32 +55,14 @@ npm start
 
 # Running on Codespaces?
 
-When opening this repo as a Codespace, it will take a few minutes the first time. 
-
-When everything has settled, open a terminal in the Codespace and run:
-
-```
-npm install
-```
-
-This will ensure the necessary packages are installed in the online virtual machine.
-
-When you are ready to start the server:
-```
-npm start
-```
-
-You might see a popup in the bottom-right of your window, saying the port is available. Click 'Make public' if this appears, otherwise 'Open in browser'.
-
-In the footer of VS Code, you'll see a radio tower icon. Click on that to open the 'Ports' panel. Find the row with port 5173. Check the visibility column and see if it says 'Private'. If so, right-click, go 'Port Visibility > Public'.
-
-Over the URL, you'll see a globe icon. Click this, and you should see a long, random-looking URL that ends in 'github.dev'. While your server is running, this should work to open your sketch from any device.
-
+There's a [guide here](https://ixfx.fun/guides/online/codespace/)
 
 # Websockets
 
 The provide `ws/ws-*` demos show how to use the in-built websocket server. This works when you're running the server on your machine. Copy the contents of the `ws` folder to `sketches` to try it out.
 
 With the server running, open `http://localhost:5123/ws-index.html`.
+
+(if you're running on something like Codespaces, use the public URL it generates for you)
 
 

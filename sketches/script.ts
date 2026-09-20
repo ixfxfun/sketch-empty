@@ -1,10 +1,9 @@
 import type { State } from './state.js';
-import * as Flow from "@ixfx/flow.js";
 import { bipolar } from "@ixfx/random.js";
 import { saveState } from './state.js';
 
 const settings = Object.freeze({
-  loopSpeed: 0,
+  loopSpeedMs: 50,
 });
 
 /**
@@ -39,11 +38,11 @@ function use(state: State) {
  * Run once when sketch first loads
  */
 function setup() {
-  const { loopSpeed } = settings;
+  const { loopSpeedMs } = settings;
 
-  Flow.continuously(() => {
+  setInterval(() => {
     update();
-  }, loopSpeed).start();
+  }, loopSpeedMs);
 }
 
 setup();
