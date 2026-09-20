@@ -13,7 +13,7 @@ function setup() {
   const { remote } = settings;
   remote.onData = (d) => {
     console.log(d);
-    setText(`remote-data`, JSON.stringify(d));
+    setText(`pointer`, `x: ${d.x.toFixed(2)}, y: ${d.y.toFixed(2)}`);
   };
 }
 setup();

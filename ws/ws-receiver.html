@@ -13,13 +13,11 @@
       --fg: hsl(var(--hue) 100% 9%);
     }
 
-    #last {
-      font-family: var(--mono-font);
-    }
-
-    #log {
+    .mono {
       height: 10em;
       font-family: var(--mono-font);
+      max-width: 80vw;
+      word-break: break-word;
     }
   </style>
 
@@ -29,8 +27,7 @@
     </script>
     <h1>receiver</h1>
     <p>Shows messages sent by the sender seketch</p>
-    <div id="remote-status"></div>
-    <div id="remote-data"></div>
+    <div class="mono" id="pointer"></div>
     <script type="module" src="ws-receiver.ts"></script>
   </body>
 </html>
